@@ -1,0 +1,3 @@
+<p>Hi <%= @maker.greeting_name %>,</p>
+<%# The line that started niji, kept so it stays reproducible: it told one maker that another maker was waiting for their review. %>
+<p><%= @spotlight_agent.maker.name %> is waiting for your review of <%= @spotlight_agent.name %>.</p>

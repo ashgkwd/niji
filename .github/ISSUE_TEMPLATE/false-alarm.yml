@@ -1,0 +1,32 @@
+name: A false alarm
+description: niji reports a read that only ever shows people what they may see.
+labels: [ false alarm ]
+body:
+  - type: textarea
+    id: finding
+    attributes:
+      label: The finding
+      description: The EXPOSED line from niji's output.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: code
+    attributes:
+      label: The code
+      description: The read and what decides who sees it (the controller guard, the render sites, the mailer action).
+      render: ruby
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it is safe
+      description: The sentence you would write in config/pii_exposure.yml, and why niji could work it out by itself.
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      placeholder: niji 0.1.0, Rails 8.1, Ruby 3.4

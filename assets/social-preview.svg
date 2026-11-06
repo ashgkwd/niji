@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+<defs><linearGradient id="g" gradientUnits="userSpaceOnUse" x1="100" y1="0" x2="220" y2="0"><stop offset="0.0" stop-color="#FF5A5F"/><stop offset="0.2" stop-color="#FF9F43"/><stop offset="0.4" stop-color="#FFD43B"/><stop offset="0.6" stop-color="#2FD38C"/><stop offset="0.8" stop-color="#3B82F6"/><stop offset="1.0" stop-color="#8B5CF6"/></linearGradient></defs>
+<rect width="1280" height="640" fill="#14121F"/>
+<g transform="translate(-20.0 5.0) scale(2.0)"><path d="M82 248 V150 A78 78 0 0 1 238 150 V248" fill="none" stroke="#FAF7F2" stroke-width="10"/><path d="M100 248 V150 A60 60 0 0 1 220 150 V248" fill="none" stroke="url(#g)" stroke-width="10"/><path d="M118 248 V150 A42 42 0 0 1 202 150 V248" fill="none" stroke="#FAF7F2" stroke-width="10"/><path d="M136 248 V150 A24 24 0 0 1 184 150 V248" fill="none" stroke="#FAF7F2" stroke-width="10"/></g>
+<g transform="translate(516.5 31.0) scale(1.5)"><g fill="none" stroke="#FAF7F2" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"><path d="M40 200 V150 A30 30 0 0 1 100 150 V200"/><path d="M156 120 V200"/><path d="M212 120 V204 A20 20 0 0 1 192 224"/><path d="M268 120 V200"/></g><circle cx="156" cy="80" r="14" fill="#FF5A5F"/><circle cx="212" cy="80" r="14" fill="#FFD43B"/><circle cx="268" cy="80" r="14" fill="#3B82F6"/></g>
+<text x="560" y="450" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="34" fill="#C9C5DA">PII guardrails for Claude Code and Codex,</text>
+<text x="560" y="496" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="34" fill="#C9C5DA">for Rails apps.</text>
+</svg>

@@ -1,0 +1,7 @@
+<article>
+  <%= avatar_tag review.user %>
+  <p><%= review.user_name %></p>
+  <% if admin? %>
+    <small><%= review.user.email_address %></small>
+  <% end %>
+</article>

@@ -1,0 +1,10 @@
+/.bundle/
+/pkg/
+/tmp/
+/coverage/
+/test/dummy/log/
+/test/dummy/tmp/
+*.gem
+Gemfile.lock
+.DS_Store
+.ruby-lsp/

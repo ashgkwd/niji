@@ -1,0 +1,4 @@
+<% if Current.user %>
+  <p>Signed in as <%= avatar_tag Current.user %> <%= Current.user.name %></p>
+<% end %>
+<%= render partial: "reviews/review", collection: @reviews %>

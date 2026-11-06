@@ -1,0 +1,4 @@
+- file: app/views/reviews/_review.html.erb
+  code: "review.user_name"
+  kind: name
+  reason: Review#user_name is the reviewer's public display name, or "Anonymous". Every review prints it.

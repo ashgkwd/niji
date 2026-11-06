@@ -1,0 +1,23 @@
+# niji
+
+> PII guardrails for Claude Code and Codex, for Rails apps. niji traces the columns that identify a person (declared once in PERSONAL_ATTRIBUTES on the model) to every view, mailer, helper, controller and service, gives each read a verdict about who is looking (own, admin, recipient, allowed, exposed), and fails the build on a read nobody has reviewed.
+
+To add niji to a Rails app, follow skills/niji-install/SKILL.md. After the install, the app's agent uses skills/niji/SKILL.md for daily work.
+
+## Install
+
+- [Install skill](skills/niji-install/SKILL.md): step-by-step install for a coding agent.
+- [README](README.md): what niji does, install by hand, verdicts, the allowlist.
+
+## Use
+
+- [niji skill](skills/niji/SKILL.md): run the check, triage findings, fix leaks, write allowlist entries.
+- [Configuration](docs/configuration.md): every option and its default.
+- [Agents](docs/agents.md): Claude Code Stop hook, Codex, JSON output, tests and CI.
+
+## Understand
+
+- [How it works](docs/how-it-works.md): sources, holders, reads, relays, admin-only controllers, mail recipients, verdicts, limits.
+- [The review email that named the wrong person](articles/origin-story.md): why niji exists.
+- [How to stop Claude from leaking personal data into your app](articles/how-to-stop-claude-from-leaking-pii.md)
+- [Four guardrails for personal data in agent-written code](articles/guardrails-to-detect-pii-in-agent-generated-code.md)

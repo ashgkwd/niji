@@ -1,0 +1,12 @@
+require "test_helper"
+require "niji/assertions"
+
+# Runs niji on the whole app as part of the test suite, so a new read of a
+# person's data that nobody has reviewed fails the normal test run.
+class NijiTest < ActiveSupport::TestCase
+  include Niji::Assertions
+
+  test "no person's name or email reaches another person's screen unreviewed" do
+    assert_no_pii_exposure
+  end
+end

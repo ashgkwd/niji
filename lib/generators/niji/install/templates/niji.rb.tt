@@ -1,0 +1,29 @@
+# niji follows personal data from your models to every view, mailer, helper,
+# controller and service, and fails on a read nobody has reviewed. Run it with
+# `bin/rails niji:check` or `bundle exec niji`. Reviewed exceptions live in
+# config/pii_exposure.yml. Every option is explained in docs/configuration.md
+# of the niji repository.
+Niji.configure do |config|
+  # The models that hold a person. Each one lists its personal columns in a
+  # PERSONAL_ATTRIBUTES constant.
+  config.models = %w[ <%= model %> ]
+
+  # The person looking at the page. Rails' authentication generator uses
+  # Current.user. Add "current_user" for Devise.
+  config.viewer_expressions = [ "Current.user" ]
+
+  # Places only admins reach. A controller is admin-only when it (or its
+  # superclass, or a concern it includes) runs one of the admin_markers before
+  # every action, and an `if admin?` branch is admin-only wherever it is.
+  # config.admin_paths += %w[ app/views/dashboard/ ]
+  # config.admin_markers = %i[ require_admin ]
+  # config.admin_predicates = %i[ admin? ]
+
+  # Set this when ApplicationController requires an admin and controllers open
+  # up with a class method (list those in guard_lowering_methods).
+  # config.admin_by_default = true
+  # config.guard_lowering_methods = %i[ allow_unauthenticated_access ]
+
+  # Names a person travels under that no association reveals.
+  # config.extra_holders = %w[ reviewer member ]
+end

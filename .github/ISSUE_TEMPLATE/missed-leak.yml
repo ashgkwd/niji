@@ -1,0 +1,43 @@
+name: A leak niji missed
+description: Code that prints one person's data to another person, and passes niji.
+labels: [ missed leak ]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. Each missed leak becomes a test, so the next app is safer.
+        Please remove every real name, email and other personal data from the example first.
+  - type: textarea
+    id: model
+    attributes:
+      label: The model
+      description: The PERSONAL_ATTRIBUTES line and any method or association involved.
+      render: ruby
+    validations:
+      required: true
+  - type: textarea
+    id: code
+    attributes:
+      label: The code that leaks
+      description: The smallest view, helper, mailer or controller code that prints the data. Name each file.
+      render: erb
+    validations:
+      required: true
+  - type: textarea
+    id: viewer
+    attributes:
+      label: Who sees it
+      description: Who reaches this page or mail, and whose data they see.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: niji's output
+      description: The output of `bundle exec niji --all` for the files above.
+      render: text
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      placeholder: niji 0.1.0, Rails 8.1, Ruby 3.4
